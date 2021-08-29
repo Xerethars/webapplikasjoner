@@ -12,5 +12,8 @@ Possible US: Overview over correct answers with statistics. User profile customi
 
 #### Oppgave 2
 
+https://github.com/Xerethars/webapplikasjoner/blob/main/Oppgave1/Flowchart%20task%202.png
+
 #### Oppgave 3
 
+https://github.com/Xerethars/webapplikasjoner/blob/main/Oppgave1/task3%20wireframe.png
