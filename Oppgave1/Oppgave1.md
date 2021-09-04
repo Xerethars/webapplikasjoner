@@ -22,3 +22,6 @@ https://github.com/Xerethars/webapplikasjoner/blob/main/Oppgave1/Flowchart%20tas
 #### Oppgave 3
 
 https://github.com/Xerethars/webapplikasjoner/blob/main/Oppgave1/task3%20wireframe.png
+
+#### Trello Screenshot
+
