@@ -25,3 +25,4 @@ https://github.com/Xerethars/webapplikasjoner/blob/main/Oppgave1/task3%20wirefra
 
 #### Trello Screenshot
 
+https://github.com/Xerethars/webapplikasjoner/blob/main/Oppgave1/trello.png
