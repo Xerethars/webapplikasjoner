@@ -16,7 +16,7 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 2vh;
-    box-shadow: 0 2px;
+    box-shadow: 5px 5px 5px 5px rgb(243, 243, 243);
 }
 
 header h2 {
@@ -64,7 +64,8 @@ input {
     width: 28%;
     height: 18vh;
     margin-bottom: 5vh;
-    border: 2px solid;
+    /*border: 2px solid;*/
+    box-shadow: 5px 5px 5px 5px rgb(243, 243, 243);
     padding: 2vh 1vh;
     position: relative;
 }
