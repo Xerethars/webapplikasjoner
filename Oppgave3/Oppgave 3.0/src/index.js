@@ -34,8 +34,43 @@ listButton.addEventListener("click", () => {
 // Oppgave 5
 const  createHTMLButton = document.getElementById("create");
 createHTMLButton.addEventListener("click", () => {
-    
+    let selectBox = document.getElementById("select");
+    let newElement = document.createElement(selectBox.value);
+    let textField = document.getElementById("text");
+    newElement.innerText = textField.value;
+    selectBox.parentElement.appendChild(newElement);
 })
+
 // Oppgave 6
+const removeLiButton = document.getElementById("remove-li");
+removeLiButton.addEventListener("click", () => {
+    let list = document.getElementById("list");
+    list.removeChild(list.lastElementChild);
+});
+
 // Oppgave 7
+const nameField = document.getElementById("name");
+nameField.addEventListener("input", () => {
+    let disableButton = document.getElementById("order");
+    let length = nameField.value.length;
+    if(length > 4) {
+        disableButton.style.borderColor = "red";
+        disableButton.disabled = true;
+    }
+    else {
+        disableButton.disabled = false;
+        disableButton.style.borderColor = "gray";
+    }
+});
+
 // Oppgave 8
+const borderButton = document.getElementById("color");
+borderButton.addEventListener("click", () => {
+    let listParent = document.getElementsByClassName("children");
+    let childArray = listParent[0].children;
+
+    for(let i = 0; i < childArray.length; i++) {
+        let li = childArray[i];
+        i % 2 == 0 ? li.style.border = "solid green" : li.style.border = "solid pink";
+    }
+});
