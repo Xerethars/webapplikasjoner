@@ -17,12 +17,21 @@ const App = () => {
     setToDoCards([...toDoCards, {title : [title], content : [content]}]);
   }
 
+  const completeToDo = (title, text) => {
+    const removeIndex = toDoCards.findIndex(item => item.title === title && item.content === text);
+    if(removeIndex === -1) return;
+    
+    const copyArray = [...toDoCards];
+    copyArray.splice(removeIndex, 1);
+    setToDoCards(copyArray)
+  }
+
   return (
     <body>
       <NavBar userName='User user'/>
       <ToDoWrapper>
         <Form action="" method="" submit={createToDo}/>
-      <ToDos toDos={toDoCards}/>
+      <ToDos toDos={toDoCards} completeToDo={completeToDo}/>
       </ToDoWrapper>
     </body>
   );
