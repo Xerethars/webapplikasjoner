@@ -19,6 +19,7 @@ const App = () => {
 
   const completeToDo = (title, text) => {
     const removeIndex = toDoCards.findIndex(item => item.title === title && item.content === text);
+    
     if(removeIndex === -1) return;
     
     const copyArray = [...toDoCards];
