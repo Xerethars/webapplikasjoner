@@ -1,0 +1,123 @@
+html {
+  width: 100%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#marginWrapper {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+body {
+  margin: 0;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 2vh;
+  box-shadow: 5px 5px 5px 5px rgb(243, 243, 243);
+}
+
+header h2 {
+  width: 85%;
+  margin-left: 8%;
+}
+
+header p {
+  margin: auto;
+}
+
+input {
+  display: block;
+  margin-bottom: 1%;
+}
+
+#titleInput {
+  width: 50%;
+  padding: 1vh;
+  background-color: rgb(243, 243, 243);
+  border: 2px;
+  border-style: groove;
+  border-radius: 0.5vh;
+}
+
+#contentInput {
+  width: 100%;
+  padding: 1vh;
+  background-color: rgb(243, 243, 243);
+  border: 2px;
+  border-style: groove;
+  border-radius: 0.5vh;
+  resize: none;
+  box-sizing: border-box;
+}
+
+#flexArticleWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#flexArticleWrapper article {
+  width: 28%;
+  height: 18vh;
+  margin-bottom: 5vh;
+  /*border: 2px solid;*/
+  box-shadow: 5px 5px 5px 5px rgb(243, 243, 243);
+  padding: 2vh 1vh;
+  position: relative;
+}
+
+section {
+  margin-top: 3%;
+}
+
+label {
+  font-weight: bold;
+}
+
+main h2 {
+  margin-top: 3%;
+}
+
+button {
+  float: right;
+  background-color: rgb(71, 225, 207);
+  border-radius: 0.5vh;
+  border-color:white;
+  border: 1px;
+  color: white;
+  font-size: 16px;
+  padding: 1vh 2vh 1vh 2vh;
+}
+
+form button {
+  padding: 1vh 5vh 1vh 5vh;
+  float: right;
+  margin-right: 0;
+  margin-top: 1%; 
+  font-size: 20px;
+}
+
+article h4 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+article p {
+  font-size: 18px;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+article button {
+  position: absolute;
+  bottom: 2vh;
+  right: 2vh;
+}
