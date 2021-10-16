@@ -11,3 +11,6 @@ https://github.com/Xerethars/webapplikasjoner/tree/main/Oppgave3
 
 ### Oppgave 6
 https://github.com/Xerethars/webapplikasjoner/tree/main/oppgave6
+
+### Oppgave 8
+https://github.com/Xerethars/webapplikasjoner/tree/main/oppgave8
