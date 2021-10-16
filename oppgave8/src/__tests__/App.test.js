@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import { act, renderHook } from '@testing-library/react-hooks'
+import { renderHook } from '@testing-library/react-hooks'
+import { act } from 'react-dom/test-utils'
 import ComponentToTest from '../components/ComponentToTest'
 import useCountPower from '../hooks/useCountPower'
 
@@ -37,8 +38,38 @@ describe('Testing the component', () => {
 })
 
 describe('Testing custom hook', () => {
-  it('Hook initialized with count to be 0, and useEffect updates count when count is updated in ComponentToTest', () => {
-    const { result: hook } = renderHook(() => useCountPower())
+  it('Hook initialized with powerCount to be 0', () => {
+    const count = 0
+    const { result: hook } = renderHook(() => useCountPower(count))
+
     expect(hook.current.powerCount).toBe(0)
+  })
+
+  it('Hook powerCount variable updated properly for every count update', () => {
+    let count = 0
+    const { result, rerender } = renderHook(() => useCountPower(count))
+
+    expect(result.current.powerCount).toBe(0)
+
+    count = 5
+    rerender()
+    expect(result.current.powerCount).toBe(25)
+
+    count = 10
+    rerender()
+    expect(result.current.powerCount).toBe(100)
+  })
+
+  it('Hook function calculates power correctly', () => {
+    const count = 0
+    const { result } = renderHook(() => useCountPower(count))
+
+    expect(result.current.powerCount).toBe(0)
+
+    act(() => {
+      result.current.calculatePower(5)
+    })
+
+    expect(result.current.powerCount).toBe(25)
   })
 })
