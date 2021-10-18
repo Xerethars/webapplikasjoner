@@ -4,11 +4,15 @@ import '../main.scss'
 const Movies = ({ movies }) => (
   <div>
     <ul className="gridWrapper">
-      {movies.map((movie) => (
-        <li>
-          <Movie movie={movie} />
-        </li>
-      ))}
+      {movies != null ? (
+        movies.map((movie) => (
+          <li>
+            <Movie movie={movie} />
+          </li>
+        ))
+      ) : (
+        <p>Search returned nothing</p>
+      )}
     </ul>
   </div>
 )
