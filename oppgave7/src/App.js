@@ -1,13 +1,5 @@
-import MyComponent from './components/MyComponent'
+import Main from './components/Main'
 
-const App = () => (
-  // Write JavaScript, use Hooks, add state and more
-
-  <main>
-    <p>Add JSX</p>
-    <p>Add components</p>
-    <MyComponent />
-  </main>
-)
+const App = () => <Main />
 
 export default App
