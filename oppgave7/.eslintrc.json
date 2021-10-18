@@ -5,6 +5,9 @@
     }
   },
   "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
   "extends": ["airbnb", "prettier"],
   "plugins": ["html", "prettier", "react-hooks", "@babel"],
   "rules": {

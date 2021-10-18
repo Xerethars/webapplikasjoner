@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 const Movie = ({ movie }) => {
-  const [movieDetails, setMovieDetails] = useState({})
+  const [movieDetails, setMovieDetails] = useState()
 
   useEffect(() => {
     const fetchMovie = async () => {
