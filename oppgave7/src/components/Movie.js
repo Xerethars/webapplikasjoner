@@ -9,7 +9,6 @@ const Movie = ({ movie }) => {
         `https://www.omdbapi.com/?apikey=e89c6379&i=${movie.imdbID}`
       )
       const data = await response.json()
-      console.log(data)
       setMovieDetails(data)
     }
     fetchMovie()
