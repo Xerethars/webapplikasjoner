@@ -13,7 +13,6 @@ const Main = () => {
       )
       const data = await resp.json()
       setMovies(data.Search)
-      console.log(data)
     }
     fetchData()
   }, [search])

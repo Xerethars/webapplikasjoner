@@ -6,7 +6,7 @@ const Movies = ({ movies }) => (
     <ul className="gridWrapper">
       {movies != null ? (
         movies.map((movie) => (
-          <li>
+          <li key={movie.imdbID}>
             <Movie movie={movie} />
           </li>
         ))
