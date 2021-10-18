@@ -4,14 +4,11 @@ import Movies from './Movies'
 
 const Main = () => {
   const [search, setSearch] = useState('Star%20Wars')
-  const [movies, setMovies] = useState([
-    { title: 'title1' },
-    { title: 'title2' },
-  ])
+  const [movies, setMovies] = useState([])
 
   return (
     <>
-      <Search search={search} setSearch={setSearch} />
+      <Search setSearch={setSearch} />
       <Movies movies={movies} />
     </>
   )

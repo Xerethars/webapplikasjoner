@@ -20,5 +20,9 @@ code {
 
 .gridWrapper {
   display : grid;
-  grid-template-rows : 1fr 1fr 1fr;
+  grid-template-columns : 1fr 1fr 1fr;
+}
+
+li {
+  border: 1px solid magenta;
 }

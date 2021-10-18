@@ -1,8 +1,12 @@
 import { useState } from 'react'
 
-const Search = ({ search, setSearch }) => {
+const Search = ({ setSearch }) => {
   const [text, setText] = useState('')
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setSearch(text)
+  }
   return (
     <div>
       <input
@@ -10,7 +14,14 @@ const Search = ({ search, setSearch }) => {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button type="submit">Search</button>
+      <button
+        type="submit"
+        onClick={(e) => {
+          handleSubmit(e)
+        }}
+      >
+        Search
+      </button>
     </div>
   )
 }

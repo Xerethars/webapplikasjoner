@@ -1,8 +1,9 @@
 import Movie from './Movie'
+import '../main.scss'
 
 const Movies = ({ movies }) => (
-  <div className="gridWrapper">
-    <ul>
+  <div>
+    <ul className="gridWrapper">
       {movies.map((movie) => (
         <li>
           <Movie movie={movie} />
