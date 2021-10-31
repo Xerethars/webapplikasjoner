@@ -17,3 +17,6 @@ https://github.com/Xerethars/webapplikasjoner/tree/main/oppgave7
 
 ### Oppgave 8
 https://github.com/Xerethars/webapplikasjoner/tree/main/oppgave8
+
+### Oppgave 9
+https://github.com/Xerethars/webapplikasjoner/tree/main/oppgave8
