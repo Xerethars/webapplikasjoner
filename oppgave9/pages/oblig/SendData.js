@@ -5,8 +5,8 @@ const SendData = () => {
     const [inputState, setInputState] = useState({
         "name" : "",
         "lastName" : "",
-        "food" : "",
-        "color" : "",
+        "favouriteFood" : "",
+        "favouriteColor" : "",
         "age" : ""
     })
 
@@ -14,7 +14,7 @@ const SendData = () => {
         e.preventDefault()
         console.log(inputState)
         const response = await axios.post("/api/favourites", inputState)
-        console.log(response)
+        console.log(response.data.data)
     }
 
     const handleChange = (e) => {
@@ -32,8 +32,8 @@ const SendData = () => {
              <form onSubmit={handleSubmit}>
                 <input type="text" name="name" value={inputState.name} placeholder="YOUR NAME" onChange={(e) => handleChange(e)} /> <br/>
                 <input type="text" name="lastName" value={inputState.lastName} placeholder="YOUR LASTNAME" onChange={(e) => handleChange(e)} /> <br/>
-                <input type="text" name="food" value={inputState.food} placeholder="YOUR FAV FOOD" onChange={(e) => handleChange(e)} /> <br/>
-                <input type="text" name="color" value={inputState.color} placeholder="YOUR FAV COLOR" onChange={(e) => handleChange(e)} /> <br/>
+                <input type="text" name="favouriteFood" value={inputState.favouriteFood} placeholder="YOUR FAV FOOD" onChange={(e) => handleChange(e)} /> <br/>
+                <input type="text" name="favouriteColor" value={inputState.favouriteColor} placeholder="YOUR FAV COLOR" onChange={(e) => handleChange(e)} /> <br/>
                 <input type="number" name="age" value={inputState.age} placeholder="YOUR AGE" onChange={(e) => handleChange(e)} /> <br/>
                 <button type="submit">SUBMIT</button>
             </form>
