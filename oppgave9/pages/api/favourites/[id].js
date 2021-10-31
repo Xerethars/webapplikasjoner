@@ -25,12 +25,18 @@ const favourites = [
 export default function handler (req, res) {
 
     if(req.method === "GET") {
-        if(Boolean(req.query.id) == true) {
-            Number(req.query.id) !== NaN && Number(req.query.id) < favourites.length ? res.status(200).json({success : true, data : favourites[req.query.id]}) : res.status(404).send('ID not a number or ID out of bounds')
-        }
-        else {
+        const { id } = req.query
+        if(id === 'all') {
             res.status(200).json({success : true, data : favourites})
         }
+        else {
+            Number(id) !== NaN ? res.status(200).json({success : true, data : favourites[id]}) : res.status(400).end()
+        }
+    }
+    if(req.method === "POST") {
+        console.log(req.body)
+        favourites.push(req.body)
+        res.status(201).json({success : true, data : favourites})
     }
     else {
         res.status(405).end()

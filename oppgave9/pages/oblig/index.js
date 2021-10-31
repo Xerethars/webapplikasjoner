@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Home = () => {
     return (
         <>
-        <Link href="/api/favourites">
+        <Link href="/api/favourites/all">
             <a>Click to see everyones favourites</a>
         </Link>
         <p></p>

@@ -13,7 +13,7 @@ const SendData = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         console.log(inputState)
-        const response = await axios.post("/api/favourites", inputState)
+        const response = await axios.post("/api/favourites/create", inputState)
         console.log(response.data.data)
     }
 
