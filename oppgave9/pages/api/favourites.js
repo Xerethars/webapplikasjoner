@@ -25,8 +25,6 @@ const favourites = [
 export default function handler (req, res) {
 
     if(req.method === "GET") {
-        const {name}
-
         res.status(200).json({success : true, data : favourites})
     }
     if(req.method === "POST") {
