@@ -7,7 +7,7 @@ const Home = () => {
             <a>Click to see everyones favourites</a>
         </Link>
         <p></p>
-        <Link href="SendData">
+        <Link href="/oblig/SendData">
             <a>Click to send new data</a>
         </Link>
         </>

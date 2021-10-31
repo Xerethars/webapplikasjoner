@@ -26,4 +26,11 @@ export default function handler (req, res) {
     if(req.method === "GET") {
         res.status(200).json({success : true, data : favourites})
     }
+    if(req.method === "POST") {
+        console.log(req)
+        res.status(201).json({success : true, data : req.body.data})
+    }
+    else {
+        res.status(405).end()
+    }
 }
